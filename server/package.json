@@ -16,8 +16,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^8.8.3"
- 
+    "mongoose": "^8.8.3",
+    "server": "file:"
   },
   "license": "ISC",
   "devDependencies": {
