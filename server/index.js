@@ -9,6 +9,8 @@ dotenv.config()
 
 const App = express();
 
+const PORT    = process.env.PORT || 3000
+
 App.use(express.json())
 App.use(cors())
 App.use(cookieParser())
@@ -18,6 +20,6 @@ App.get('/test', (req, res) => {
     res.send('Test route is working!');
 });
 
-App.listen(process.env.PORT,DbConnection()
+App.listen(PORT,DbConnection()
 )
 
