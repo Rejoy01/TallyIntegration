@@ -50,7 +50,9 @@ export const CreateLed =asynchandler(async(req,res)=>{
 
 export const GetAllLedger = asynchandler(async (req, res) => {
     try {
-        const AllLedgers = await Ledgers.find();
+        
+        const AllLedgers = await Ledgers.find().lean();
+
         return res.status(200).json(AllLedgers);
     } catch (error) {
         console.log("Error fetching Ledgers: ", error);
