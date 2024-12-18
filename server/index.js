@@ -15,7 +15,7 @@ App.use(express.json())
 App.use(cors())
 App.use(cookieParser())
 
-App.use('/tally/',LedgerCreation)
+App.use('/tally',LedgerCreation)
 App.get('/test', (req, res) => {
     res.send('Test route is working!');
 });
