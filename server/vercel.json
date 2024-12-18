@@ -6,9 +6,5 @@
     ],
     "routes": [
         { "src": "/(.*)", "dest": "/" }
-    ],
-    "functions": {
-        "Controller/Ledgercreation.js": {
-          "maxDuration": 20
-        }}
+    ]
 }
