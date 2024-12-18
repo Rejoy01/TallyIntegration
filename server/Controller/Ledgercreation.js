@@ -11,7 +11,9 @@ export const CreateLed =asynchandler(async(req,res)=>{
                 return res.status(400).json({errors: "All fields are required"})
             }  
       
-            const isLed = await Ledgers.findOne({Name})
+            const isLed = await Ledgers.findOne({name:Name})
+     
+            
 
             if(isLed){
              return  res.status(404).json({Message:"User Already Exists"})
