@@ -18,5 +18,5 @@
     "mongoose": "^8.8.3",
     "server": "file:"
   },
-  "license": "ISC"
+  "license": "MIT"
 }

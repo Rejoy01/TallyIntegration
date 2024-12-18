@@ -20,6 +20,5 @@ App.get('/test', (req, res) => {
     res.send('Test route is working!');
 });
 
-App.listen(PORT,DbConnection()
-)
+App.listen(PORT,DbConnection())
 
