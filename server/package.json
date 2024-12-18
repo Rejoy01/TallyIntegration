@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "clean": "if exist dist rmdir /s /q dist",
-    "build": "babel . --out-dir dist --ignore node_modules"
+    "build": "babel index.js --out-dir dist --ignore node_modules"
   },
   "author": "",
   "type": "module",
