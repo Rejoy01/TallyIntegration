@@ -48,19 +48,14 @@ export const CreateLed =asynchandler(async(req,res)=>{
 })
 
 
-export const GetAllLedger =asynchandler(async(req,res)=>{
-
-        const AllLedgers = await Ledgers.find()
-
-        try {
-            return res.status(200).json(
-                AllLedgers
-            )
-        } catch (error) {
-            console.log("Error fetching Legers : ",error);
-            return res.status(500).json({
-                message:"Error in getting data"
-            })
-        }
-
-})
+export const GetAllLedger = asynchandler(async (req, res) => {
+    try {
+        const AllLedgers = await Ledgers.find();
+        return res.status(200).json(AllLedgers);
+    } catch (error) {
+        console.log("Error fetching Ledgers: ", error);
+        return res.status(500).json({
+            message: "Error in getting data"
+        });
+    }
+});
