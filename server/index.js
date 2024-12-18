@@ -14,6 +14,9 @@ App.use(cors())
 App.use(cookieParser())
 
 App.use('/tally/',LedgerCreation)
+App.get('/test', (req, res) => {
+    res.send('Test route is working!');
+});
 
 App.listen(process.env.PORT,DbConnection()
 )
