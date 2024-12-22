@@ -4,8 +4,7 @@ import mongoose from "mongoose";
 const DbConnection = async () => {
     try {
         await mongoose.connect(process.env.CONNECTION_STR,{
-            useNewUrlParser: true,
-            poolSize: 5
+            useNewUrlParser: true
         })
         console.log("Database connection established");
         

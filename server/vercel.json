@@ -6,5 +6,10 @@
     ],
     "routes": [
         { "src": "/(.*)", "dest": "/" }
-    ]
+    ],
+     "functions": {
+        "Controller/*.js":{ 
+            "timeout": 60 
+        }
+    }
 }
