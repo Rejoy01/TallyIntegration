@@ -23,5 +23,5 @@ App.get('/test', (req, res) => {
 
 App.listen(PORT,DbConnection())
 
-// exports.api = functions.https.onRequest(App)
+exports.api = functions.https.onRequest(App)
 

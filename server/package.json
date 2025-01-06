@@ -5,9 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "deploy":"firebase deploy --only functions:api",
-    "vercel-build": "echo world"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "MIT",
@@ -21,8 +19,5 @@
     "firebase-admin": "^13.0.2",
     "firebase-functions": "^6.2.0",
     "mongoose": "^8.9.2"
-  },
-  "engines": {
-    "node": "22"
   }
 }
