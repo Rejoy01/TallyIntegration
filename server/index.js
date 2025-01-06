@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import DbConnection from './DBCONNECTION/DbConnection.js';
 import { LedgerCreation } from './Routes/LedgerRoutes.js';
-import * as functions from ("firebase-functions")
+// import * as functions from ("firebase-functions")
 
 dotenv.config()
 
@@ -23,5 +23,5 @@ App.get('/test', (req, res) => {
 
 App.listen(PORT,DbConnection())
 
-exports.api = functions.https.onRequest(App)
+// exports.api = functions.https.onRequest(App)
 
